@@ -1,0 +1,23 @@
+{
+  "grobid": {
+    "server": "http://localhost:8070",
+    "prefix": "",
+    "url_mapping": {
+      "processReferences": "/api/processReferences",
+      "processHeader": "/api/processHeader",
+      "processCitations": "/api/processCitations",
+      "ping": "/service/isalive"
+    }
+  },
+  "backend": {
+    "server": "http://localhost:5000",
+    "prefix": "",
+    "url_mapping": {
+      "processPDF": "/process",
+      "feedback": "/annotation/feedback"
+    }
+  },
+  "batch_size": 1000,
+  "sleep_time": 5,
+  "coordinates": null
+}
